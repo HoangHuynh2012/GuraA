@@ -1,0 +1,184 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: #7f7fd5;
+    /* fallback for old browsers */
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-gradient( linear, left top, right top, from(#91eae4), color-stop(#86a8e7), to(#7f7fd5));
+    background: -o-linear-gradient(left, #91eae4, #86a8e7, #7f7fd5);
+    background: linear-gradient( to right, #91eae4, #86a8e7, #7f7fd5);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container {
+    height: calc(100vh - 90px);
+    min-height: calc(100vh - 90px);
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+::-moz-selection {
+    background: transparent;
+}
+
+::selection {
+    background: transparent;
+}
+
+@font-face {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/quicksand/v24/6xK-dSZaM9iE8KbpRA_LJ3z8mH9BOJvgkP8o58m-wi40.woff2) format("woff2");
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+/* latin-ext */
+
+@font-face {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/quicksand/v24/6xK-dSZaM9iE8KbpRA_LJ3z8mH9BOJvgkP8o58i-wi40.woff2) format("woff2");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+
+@font-face {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/quicksand/v24/6xK-dSZaM9iE8KbpRA_LJ3z8mH9BOJvgkP8o58a-wg.woff2) format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+.gura {
+    width: 100%;
+}
+
+.gura1,
+.gura2 {
+    display: block;
+    margin: auto;
+    width: 33vw;
+}
+
+.title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 70px;
+    font-weight: bold;
+    color: white;
+    font-family: "Quicksand";
+    margin: 30px 0px;
+    margin-top: 0;
+    z-index: 1;
+}
+
+.counter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    font-family: "Quicksand";
+    margin-bottom: 10px;
+    z-index: 1;
+}
+
+.local {
+    margin-bottom: -30px;
+}
+
+.world {
+    margin: 20px 0px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    clear: both;
+    position: relative;
+    margin-top: -70px;
+    font-family: "Quicksand";
+    height: 70px;
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    font-size: 20px;
+    line-height: 1.1;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1366px) {
+    .gura1,
+    .gura2 {
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .gura1,
+    .gura2 {
+        width: 75vw;
+    }
+    .counter {
+        font-size: 25px;
+    }
+    .title {
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .gura1,
+    .gura2 {
+        display: block;
+        margin: auto;
+        width: 90vw;
+    }
+    .counter {
+        font-size: 25px;
+    }
+    .title {
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+    footer {
+        font-size: 15px;
+    }
+}
