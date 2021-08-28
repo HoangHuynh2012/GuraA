@@ -48,7 +48,7 @@ $(document).ready(function() {
 
 $(".gura").on("touchstart mousedown", function(e) {
     e.preventDefault();
-    const audio = new Audio("../public/assets/sound/sound.mp3");
+    const audio = new Audio("./sound.mp3");
     audio.play();
     $(".gura1").attr("style", "display:none;");
     $(".gura2").attr("style", "display:block;");
